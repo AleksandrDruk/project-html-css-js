@@ -1,10 +1,10 @@
-import $ from 'jquery'; // Это должно идти первым, так как Slick зависит от jQuery
+import $ from 'jquery';
 import $ from 'jquery';
 window.$ = $;
 window.jQuery = $;
-import 'slick-carousel/slick/slick.css'; // Затем подключаем базовые стили для Slick
-import 'slick-carousel/slick/slick-theme.css'; // Подключаем тему (если вы хотите использовать ее)
-import Slick from 'slick-carousel'; // И после этого импортируем саму библиотеку Slick
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slick from 'slick-carousel';
 
 //Реализация открытия/закрытия мобильного меню
 (() => {
