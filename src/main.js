@@ -1,3 +1,8 @@
+import $ from 'jquery'; // Это должно идти первым, так как Slick зависит от jQuery
+import 'slick-carousel/slick/slick.css'; // Затем подключаем базовые стили для Slick
+import 'slick-carousel/slick/slick-theme.css'; // Подключаем тему (если вы хотите использовать ее)
+import Slick from 'slick-carousel'; // И после этого импортируем саму библиотеку Slick
+
 //Реализация открытия/закрытия мобильного меню
 (() => {
   const refs = {
@@ -156,4 +161,29 @@ let calcScrollValue = () => {
 document.addEventListener('DOMContentLoaded', () => {
   calcScrollValue();
   window.onscroll = calcScrollValue;
+});
+
+$('.slick-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+  ],
 });
