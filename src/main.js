@@ -1,11 +1,3 @@
-import $ from 'jquery';
-import $ from 'jquery';
-window.$ = $;
-window.jQuery = $;
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slick from 'slick-carousel';
-
 //Реализация открытия/закрытия мобильного меню
 (() => {
   const refs = {
