@@ -1,6 +1,4 @@
 import $ from 'jquery'; // Это должно идти первым, так как Slick зависит от jQuery
-import $ from 'jquery';
-import $ from 'jquery';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slick from 'slick-carousel';
